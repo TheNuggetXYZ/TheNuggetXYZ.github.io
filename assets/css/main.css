@@ -1,8 +1,18 @@
 body{
-    font-family: "Eras ITC", "ITC Eras", "Eras", sans-serif;
     color: #e6edf3;
     background-color: #0d1117;
+    font-family: "CustomEras", sans-serif !important;
+    font-weight: normal;
+    font-style: normal;
 }
 .global-footer{
     background-color: #161b22;
+}
+
+
+@font-face {
+    font-family: 'CustomEras';
+    src: url('../media/fonts/ItcEras-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
