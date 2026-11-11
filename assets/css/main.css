@@ -24,7 +24,7 @@ body{
     margin: 0;
 }
 
-main{
+.global-main{
     flex-grow: 1;
 }
 
@@ -41,6 +41,9 @@ main{
     padding-block: 2rem
 }
 
+.hero-section{
+    margin-top: 30vh;
+}
 
 @font-face {
     font-family: 'CustomEras';
