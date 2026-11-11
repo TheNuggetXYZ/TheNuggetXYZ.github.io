@@ -1,12 +1,31 @@
+:root {
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --bg-surface: #334155;
+
+    --text-primary: #f8fafc;
+    --text-muted: #94a3b8;
+
+    --accent: #38bdf8;
+    --accent-hover: #7dd3fc;
+
+    --border-color: #1e293b;
+}
+
 body{
-    color: #e6edf3;
-    background-color: #0d1117;
     font-family: "CustomEras", sans-serif !important;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
     font-weight: normal;
     font-style: normal;
 }
+
+.container{
+
+}
+
 .global-footer{
-    background-color: #161b22;
+    background-color: var(--bg-secondary);
 }
 
 
