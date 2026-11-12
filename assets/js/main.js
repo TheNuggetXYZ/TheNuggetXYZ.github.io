@@ -1,6 +1,6 @@
 var greetingElement = document.getElementById("hero-title");
 
-var currentTime = new Date().getTime();
+var currentTime = new Date().getHours();
 var greeting = "Hello";
 
 if (currentTime < 3)
