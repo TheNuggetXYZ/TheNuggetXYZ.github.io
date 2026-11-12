@@ -83,3 +83,7 @@ html, body{
     border-radius: 50%;
     object-fit: cover;   /* Prevents the photo from squishing or stretching */
 }
+
+.no-wrap{
+     white-space: nowrap;
+}
