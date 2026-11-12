@@ -1,0 +1,17 @@
+/* Forces padding and borders to stay inside an element's width */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Prevents images and videos from ever overflowing their parent container */
+img, picture, video, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent horizontal scroll */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}

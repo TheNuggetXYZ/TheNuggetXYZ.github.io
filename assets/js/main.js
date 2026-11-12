@@ -1,4 +1,4 @@
-var greetingElement = document.getElementById("hero-title");
+var greetingElement = document.getElementById("hero-greeting");
 
 var currentTime = new Date().getHours();
 var greeting = "Hello";
@@ -12,4 +12,4 @@ else if (currentTime < 18)
 else
     greeting = "Good evening";
 
-greetingElement.textContent = greeting + ", I'm Nugget";
+greetingElement.textContent = greeting;
