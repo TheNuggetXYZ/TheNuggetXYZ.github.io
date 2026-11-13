@@ -73,14 +73,18 @@ html, body{
     text-shadow: 0px 0px 8px var(--accent);
 }
 
+.hero-description{
+    margin-inline: clamp(0rem, 6vw, 8rem);
+}
+
 .heading-xl {
     font-size: clamp(1.75rem, 6vw, 4rem);
     line-height: 1.1;
 }
 
 .avatar-round {
-    width: 150px;
-    height: 150px;
+    width: 128px;
+    height: 128px;
     border-radius: 50%;
     object-fit: cover;   /* Prevents the photo from squishing or stretching */
 }
