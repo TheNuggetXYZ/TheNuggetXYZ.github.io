@@ -145,17 +145,24 @@ html, body{
 }
 
 .projects-section{
-    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.projects-gallery{
+    columns: 2 600px;
+    margin-bottom: 2rem;
 }
 
 .project-container{
     background-color: var(--bg-surface);
     border-radius: 1rem;
     max-width: 600px;
-    margin-inline: auto;
     padding: 0rem 1rem 1rem 1rem;
     overflow: hidden;
-    margin-bottom: 4rem;
+    margin: 0rem 1rem 2rem 1rem;
 }
 
 .project-container img{
