@@ -143,3 +143,23 @@ html, body{
   margin-left: 2rem;
   vertical-align: middle;
 }
+
+.projects-section{
+    margin-top: 2rem;
+}
+
+.project-container{
+    background-color: var(--bg-surface);
+    border-radius: 1rem;
+    width: 50%;
+    margin-inline: auto;
+    padding: 0rem 1rem 1rem 1rem;
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+
+.project-container img{
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 100%;
+}
