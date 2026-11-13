@@ -29,6 +29,32 @@ html, body{
     width: 100%;
 }
 
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 1rem;
+  z-index: 9999;
+
+  background-color: var(--accent, #38bdf8);
+  color: var(--bg-primary, #0f172a);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+  /* entrance animation */
+  transition: top 0.2s ease-in-out;
+}
+
+/* 4. Slide into view when focused via keyboard Tab */
+.skip-link:focus {
+  top: 1rem;
+  outline: 3px solid var(--text-primary, #f8fafc);
+  outline-offset: 2px;
+}
+
+
 .global-main{
     flex-grow: 1;
     display: flex;
@@ -51,7 +77,6 @@ html, body{
 .global-footer{
     background-color: var(--bg-secondary);
     text-align: center;
-    padding-block: 1rem
 }
 
 .hero-section{
@@ -86,9 +111,35 @@ html, body{
     width: 128px;
     height: 128px;
     border-radius: 50%;
-    object-fit: cover;   /* Prevents the photo from squishing or stretching */
 }
 
 .no-wrap{
      white-space: nowrap;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 1rem;
+  justify-content: center;
+}
+
+.nav-link{
+    color: var(--accent);
+}
+
+.nav-link:hover{
+    color: var(--accent-hover);
+}
+
+.nav-list li:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 1rem;
+  background-color: var(--border-color, #334155);
+  margin-left: 2rem;
+  vertical-align: middle;
 }
